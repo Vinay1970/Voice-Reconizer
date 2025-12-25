@@ -100,13 +100,11 @@ Persist for future sessions (Windows):
 
 ```powershell
 setx OPENWEATHER_API_KEY "your_openweather_key_here"
-```
 
 Or create a `config.json` in the project root with:
 
 ```json
 {"OPENWEATHER_API_KEY":"your_openweather_key_here"}
-```
 
 - For Spotify searches using the API, set `SPOTIPY_CLIENT_ID` and
   `SPOTIPY_CLIENT_SECRET` in `config.json` or as environment variables.
@@ -117,7 +115,6 @@ From the project root (development):
 
 ```powershell
 python voiceReconizer.py
-```
 
 Speak the wake word "dadu" when prompted, then issue commands like:
 
@@ -136,7 +133,6 @@ build steps. From PowerShell in the project folder run:
 
 ```powershell
 .\build_exe.ps1
-```
 
 The script will:
 
@@ -162,24 +158,7 @@ edit `build_exe.ps1` accordingly.
 - `config.json` may contain API keys — do not commit this file to
   public repositories. Use environment variables for CI/servers.
 
-## Next steps / suggestions
-
-- Add user confirmation before autoplaying media.
-- Implement non-blocking TTS to allow overlapping speech and audio
-  playback.
-- Add a small GUI or tray icon for easier control and to list active
-  timers.
-- **Route optimization enhancements** (completed):
-  - ✅ GPS auto-detection for current location
-  - ✅ Multi-route suggestions (Fastest, Cheapest, Balanced)
-  - ✅ Regional toll database for USA
-  - Integrate real toll APIs (TomTom, HERE Maps) for global toll accuracy
-  - Use real-time traffic APIs (Google Maps, TomTom) for live conditions
-  - Allow saving/managing favorite routes and destinations
-  - Multi-language support for route descriptions
-  - Offline route caching for areas with no internet
-
----
 
 If you want, I can also update `README-packaging.md` or add a
 `CONTRIBUTING.md` with development notes.
+
